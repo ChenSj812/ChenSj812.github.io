@@ -197,11 +197,13 @@ for col in categorical_cols:
 #### 4.2.3 Group Survival Analysis Results
 
 1. **Gender**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 2.038938 |
 | p-value | 0.153317 |
 | -log2(p) | 2.705414 |
+
 - **Conclusion**: p > 0.05, survival curves for different genders are not significantly different
 
 ![Gender group survival curve](./images/km_gender_curve.png)
@@ -210,11 +212,13 @@ for col in categorical_cols:
 ---
 
 2. **Senior Citizen Status (seniorCitizen)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 0.125471 |
 | p-value | 0.723174 |
 | -log2(p) | 0.467584 |
+
 - **Conclusion**: p > 0.05, senior citizen status has no significant impact on customer retention
 
 ![Senior citizen group survival curve](./images/km_senior_curve.png)
@@ -223,11 +227,13 @@ for col in categorical_cols:
 ---
 
 3. **Partner Status (partner)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 135.758896 |
 | p-value | 2.252911e-31 |
 | -log2(p) | 101.807981 |
+
 - **Conclusion**: Customers with partners have significantly longer retention time
 
 ![Partner status group survival curve](./images/km_partner_curve.png)
@@ -236,11 +242,13 @@ for col in categorical_cols:
 ---
 
 4. **Dependents Status (dependents)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 35.031241 |
 | p-value | 3.244576e-09 |
 | -log2(p) | 28.199323 |
+
 - **Conclusion**: Customers with dependents have significantly longer retention time
 
 ![Dependents status group survival curve](./images/km_dependents_curve.png)
@@ -249,11 +257,13 @@ for col in categorical_cols:
 ---
 
 5. **Phone Service (phoneService)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 1.683709 |
 | p-value | 0.194432 |
 | -log2(p) | 2.36266 |
+
 - **Conclusion**: p > 0.05, having phone service has no significant impact on retention
 
 ![Phone service group survival curve](./images/km_phoneservice_curve.png)
@@ -262,11 +272,13 @@ for col in categorical_cols:
 ---
 
 6. **Multiple Lines Service (multipleLines)**
+
 | Group Comparison | test_statistic | p-value |
 |-----------------|----------------|---------|
 | No phone service vs No | 12.382712 | 4.333273e-04 |
 | No vs Yes | 72.358368 | 1.794602e-17 |
 | No phone service vs Yes | 1.500291 | 0.2206266 |
+
 - **Conclusion**: Multiple lines service has a significant impact on retention
 
 ![Multiple lines service group survival curve](./images/km_multiplelines_curve.png)
@@ -275,11 +287,13 @@ for col in categorical_cols:
 ---
 
 7. **Internet Service Type (internetService)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 25.172866 |
 | p-value | 5.241449e-07 |
 | -log2(p) | 20.863531 |
+
 - **Conclusion**: DSL customers retain significantly better than fiber optic customers
 
 ![Internet service group survival curve](./images/km_internet_curve.png)
@@ -288,11 +302,13 @@ for col in categorical_cols:
 ---
 
 8. **Streaming TV (streamingTV)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 12.93926 |
 | p-value | 0.000322 |
 | -log2(p) | 11.601718 |
+
 - **Conclusion**: Customers with streaming TV service retain significantly better
 
 ![Streaming TV group survival curve](./images/km_streamingtv_curve.png)
@@ -301,11 +317,13 @@ for col in categorical_cols:
 ---
 
 9. **Streaming Movies (streamingMovies)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 17.941685 |
 | p-value | 0.000023 |
 | -log2(p) | 15.422016 |
+
 - **Conclusion**: Customers with streaming movies service retain significantly better
 
 ![Streaming movies group survival curve](./images/km_streamingmovies_curve.png)
@@ -314,11 +332,13 @@ for col in categorical_cols:
 ---
 
 10. **Online Security Service (onlineSecurity)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 141.60316 |
 | p-value | 1.187554e-32 |
 | -log2(p) | 106.053706 |
+
 - **Conclusion**: Customers with online security service have significantly longer retention time
 
 ![Online security group survival curve](./images/km_onlinesecurity_curve.png)
@@ -327,11 +347,13 @@ for col in categorical_cols:
 ---
 
 11. **Online Backup Service (onlineBackup)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 189.482865 |
 | p-value | 4.122979e-43 |
 | -log2(p) | 140.799221 |
+
 - **Conclusion**: Customers with online backup service have significantly longer retention time
 
 ![Online backup group survival curve](./images/km_onlinebackup_curve.png)
@@ -340,11 +362,13 @@ for col in categorical_cols:
 ---
 
 12. **Device Protection Service (deviceProtection)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 71.496825 |
 | p-value | 2.777047e-17 |
 | -log2(p) | 54.999226 |
+
 - **Conclusion**: Customers with device protection service have significantly longer retention time
 
 ![Device protection group survival curve](./images/km_deviceprotection_curve.png)
@@ -353,11 +377,13 @@ for col in categorical_cols:
 ---
 
 13. **Tech Support Service (techSupport)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 90.430334 |
 | p-value | 1.916059e-21 |
 | -log2(p) | 68.822348 |
+
 - **Conclusion**: Customers with tech support service have significantly longer retention time
 
 ![Tech support group survival curve](./images/km_techsupport_curve.png)
@@ -366,11 +392,13 @@ for col in categorical_cols:
 ---
 
 14. **Paperless Billing (paperlessBilling)**
+
 | Metric | Value |
 |--------|-------|
 | test_statistic | 8.340802 |
 | p-value | 0.003876 |
 | -log2(p) | 8.011049 |
+
 - **Conclusion**: Customers using paperless billing have higher churn risk
 
 ![Paperless billing group survival curve](./images/km_paperless_curve.png)

@@ -1,5 +1,7 @@
-# Survival Analysis Case Report - Telecom Customer Churn Prediction
-
+---
+layout: post
+title: Survival Analysis Case Report - Telecom Customer Churn Prediction
+---
 **Author**: Chen Sijia
 
 **Dataset**: IBM Telco Customer Churn  

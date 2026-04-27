@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Survival Analysis Case Report - Telecom Customer Churn Prediction
+date: 2026-04-27
 ---
 
 **Author**: Chen Sijia

@@ -47,7 +47,7 @@ This case uses survival analysis to predict churn time for telecom customers, he
 
 ---
 
-## 2. Data Overview {:#data-overview}
+<h2 id="data-overview">2. Data Overview</h2>
 
 ### 2.1 Data Source
 - **Dataset**: IBM Telco Customer Churn Dataset
@@ -64,7 +64,7 @@ This case uses survival analysis to predict churn time for telecom customers, he
 
 ---
 
-## 3. Survival Analysis Methods {:#survival-analysis-methods}
+<h2 id="survival-analysis-methods">3. Survival Analysis Methods</h2>
 
 ### 3.1 Kaplan-Meier Estimator
 
@@ -145,7 +145,7 @@ Chi-square test to test whether multiple survival curves are statistically equiv
 
 ---
 
-## 4. Kaplan-Meier Survival Analysis {:#kaplan-meier-survival-analysis}
+<h2 id="kaplan-meier-survival-analysis">4. Kaplan-Meier Survival Analysis</h2>
 
 ### 4.1 Analysis Workflow
 
@@ -181,7 +181,7 @@ for col in categorical_cols:
 - **Median survival time: 34 months**
 - **Interpretation**: 50% of customers churn within 34 months
 
-![Overall survival curve](./images/km_overall_curve.png)
+![Overall survival curve](/assets/images/km_overall_curve.png)
 *Figure 1: Overall Kaplan-Meier survival curve*
 
 #### 4.2.2 DSL Internet Service Survival Probability (first 10 months)
@@ -211,7 +211,7 @@ for col in categorical_cols:
 
 - **Conclusion**: p > 0.05, survival curves for different genders are not significantly different
 
-![Gender group survival curve](./images/km_gender_curve.png)
+![Gender group survival curve](/assets/images/km_gender_curve.png)
 *Figure 2: Survival curve by gender*
 
 ---
@@ -226,7 +226,7 @@ for col in categorical_cols:
 
 - **Conclusion**: p > 0.05, senior citizen status has no significant impact on customer retention
 
-![Senior citizen group survival curve](./images/km_senior_curve.png)
+![Senior citizen group survival curve](/assets/images/km_senior_curve.png)
 *Figure 3: Survival curve by senior citizen status*
 
 ---
@@ -241,7 +241,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with partners have significantly longer retention time
 
-![Partner status group survival curve](./images/km_partner_curve.png)
+![Partner status group survival curve](/assets/images/km_partner_curve.png)
 *Figure 4: Survival curve by partner status*
 
 ---
@@ -256,7 +256,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with dependents have significantly longer retention time
 
-![Dependents status group survival curve](./images/km_dependents_curve.png)
+![Dependents status group survival curve](/assets/images/km_dependents_curve.png)
 *Figure 5: Survival curve by dependents status*
 
 ---
@@ -271,7 +271,7 @@ for col in categorical_cols:
 
 - **Conclusion**: p > 0.05, having phone service has no significant impact on retention
 
-![Phone service group survival curve](./images/km_phoneservice_curve.png)
+![Phone service group survival curve](/assets/images/km_phoneservice_curve.png)
 *Figure 6: Survival curve by phone service*
 
 ---
@@ -286,7 +286,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Multiple lines service has a significant impact on retention
 
-![Multiple lines service group survival curve](./images/km_multiplelines_curve.png)
+![Multiple lines service group survival curve](/assets/images/km_multiplelines_curve.png)
 *Figure 7: Survival curve by multiple lines service*
 
 ---
@@ -301,7 +301,7 @@ for col in categorical_cols:
 
 - **Conclusion**: DSL customers retain significantly better than fiber optic customers
 
-![Internet service group survival curve](./images/km_internet_curve.png)
+![Internet service group survival curve](/assets/images/km_internet_curve.png)
 *Figure 8: Survival curve by internet service type*
 
 ---
@@ -316,7 +316,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with streaming TV service retain significantly better
 
-![Streaming TV group survival curve](./images/km_streamingtv_curve.png)
+![Streaming TV group survival curve](/assets/images/km_streamingtv_curve.png)
 *Figure 9: Survival curve by streaming TV*
 
 ---
@@ -331,7 +331,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with streaming movies service retain significantly better
 
-![Streaming movies group survival curve](./images/km_streamingmovies_curve.png)
+![Streaming movies group survival curve](/assets/images/km_streamingmovies_curve.png)
 *Figure 10: Survival curve by streaming movies*
 
 ---
@@ -346,7 +346,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with online security service have significantly longer retention time
 
-![Online security group survival curve](./images/km_onlinesecurity_curve.png)
+![Online security group survival curve](/assets/images/km_onlinesecurity_curve.png)
 *Figure 11: Survival curve by online security*
 
 ---
@@ -361,7 +361,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with online backup service have significantly longer retention time
 
-![Online backup group survival curve](./images/km_onlinebackup_curve.png)
+![Online backup group survival curve](/assets/images/km_onlinebackup_curve.png)
 *Figure 12: Survival curve by online backup*
 
 ---
@@ -376,7 +376,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with device protection service have significantly longer retention time
 
-![Device protection group survival curve](./images/km_deviceprotection_curve.png)
+![Device protection group survival curve](/assets/images/km_deviceprotection_curve.png)
 *Figure 13: Survival curve by device protection*
 
 ---
@@ -391,7 +391,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers with tech support service have significantly longer retention time
 
-![Tech support group survival curve](./images/km_techsupport_curve.png)
+![Tech support group survival curve](/assets/images/km_techsupport_curve.png)
 *Figure 14: Survival curve by tech support*
 
 ---
@@ -406,7 +406,7 @@ for col in categorical_cols:
 
 - **Conclusion**: Customers using paperless billing have higher churn risk
 
-![Paperless billing group survival curve](./images/km_paperless_curve.png)
+![Paperless billing group survival curve](/assets/images/km_paperless_curve.png)
 *Figure 15: Survival curve by paperless billing*
 
 ---
@@ -423,7 +423,7 @@ for col in categorical_cols:
 | Credit card (automatic) vs Mailed check | 39.684613 | 2.984678e-10 | 31.641706 |
 | Electronic check vs Mailed check | 0.898320 | 3.432326e-01 | 1.542741 |
 
-![Payment method group survival curve](./images/km_paymentmethod_curve.png)
+![Payment method group survival curve](/assets/images/km_paymentmethod_curve.png)
 *Figure 16: Survival curve by payment method*
 
 #### 4.2.4 Key Findings
@@ -456,7 +456,7 @@ for col in categorical_cols:
 
 ---
 
-## 5. Cox Proportional Hazards Model {:#cox-proportiona-hazards-model}
+<h2 id="cox-proportional-hazards-model">5. Cox Proportional Hazards Model</h2>
 
 ### 5.1 Analysis Workflow
 
@@ -503,7 +503,7 @@ cph.check_assumptions(survival_pd, p_value_threshold=0.05, show_plots=True)
 
 #### 5.2.2 Model Coefficients and Hazard Ratio Analysis
 
-![Cox model hazard ratios](./images/cox_hazard_ratios.png)
+![Cox model hazard ratios](/assets/images/cox_hazard_ratios.png)
 *Figure 17: Cox model hazard ratios (HR<1 indicates protective factor, with 95% CI)*
 
 | Variable | coef | exp(coef) | se(coef) | coef 95% CI | exp(coef) 95% CI | z | p-value | -log2(p) | Significance |
@@ -515,10 +515,10 @@ cph.check_assumptions(survival_pd, p_value_threshold=0.05, show_plots=True)
 
 **Significance markers**: *** p<0.001, ** p<0.01, * p<0.05*
 
-![Scaled Schoenfeld residuals plot](./images/schoenfeld_residuals_techSupport.png)
-![Scaled Schoenfeld residuals plot](./images/schoenfeld_residuals_dependentYes.png)
-![Scaled Schoenfeld residuals plot](./images/schoenfeld_residuals_internetService.png)
-![Scaled Schoenfeld residuals plot](./images/schoenfeld_residuals_onlineBackup.png)  
+![Scaled Schoenfeld residuals plot](/assets/images/schoenfeld_residuals_techSupport.png)
+![Scaled Schoenfeld residuals plot](/assets/images/schoenfeld_residuals_dependentYes.png)
+![Scaled Schoenfeld residuals plot](/assets/images/schoenfeld_residuals_internetService.png)
+![Scaled Schoenfeld residuals plot](/assets/images/schoenfeld_residuals_onlineBackup.png)  
 *Figure 18: Scaled Schoenfeld residual plots for each variable (with both rank and km time transformation methods)*
 
 #### 5.2.3 Proportional Hazards Assumption Test Results
@@ -541,10 +541,10 @@ The following variables violate the proportional hazards assumption:
 
 **Remedial suggestion**: When modeling, use `strata=['internetService_DSL', 'onlineBackup_Yes', 'techSupport_Yes']` to stratify variables that violate the assumption, improving model reliability.
 
-![Log-log KM curves](./images/loglog_km_curves-1.png)
-![Log-log KM curves](./images/loglog_km_curves-2.png)
-![Log-log KM curves](./images/loglog_km_curves-3.png)
-![Log-log KM curves](./images/loglog_km_curves-4.png)  
+![Log-log KM curves](/assets/images/loglog_km_curves-1.png)
+![Log-log KM curves](/assets/images/loglog_km_curves-2.png)
+![Log-log KM curves](/assets/images/loglog_km_curves-3.png)
+![Log-log KM curves](/assets/images/loglog_km_curves-4.png)  
 *Figure 19: Log-log Kaplan-Meier curves for each variable group, used to visually verify the proportional hazards assumption*
 
 #### 5.2.4 Key Findings
@@ -560,7 +560,7 @@ The following variables violate the proportional hazards assumption:
 
 ---
 
-## 6. Accelerated Failure Time Model (AFT) {:#accelerated-failure-time-model-aft}
+<h2 id="accelerated-failure-time-model-aft">6. Accelerated Failure Time Model (AFT)</h2>
 
 ### 6.1 Analysis Workflow
 
@@ -607,7 +607,7 @@ aft.plot()
 | log-likelihood ratio test | 877.49 (df=9) |
 | -log2(p) of ll-ratio test | 605.78 |
 
-![AFT model coefficient plot](./images/aft_model_plot.png)
+![AFT model coefficient plot](/assets/images/aft_model_plot.png)
 *Figure 20: AFT model coefficients and confidence intervals*
 
 #### 6.2.2 AFT Model Coefficient Table
@@ -628,28 +628,28 @@ aft.plot()
 
 #### 6.2.3 Model Assumption Verification - Log-odds Plots
 
-![Log-odds plot - partner](./images/logodds_partner.png)
+![Log-odds plot - partner](/assets/images/logodds_partner.png)
 *Figure 21: Log-odds plot (partner)*
 
-![Log-odds plot - multipleLines](./images/logodds_multiplelines.png)
+![Log-odds plot - multipleLines](/assets/images/logodds_multiplelines.png)
 *Figure 22: Log-odds plot (multipleLines)*
 
-![Log-odds plot - internetService](./images/logodds_internet.png)
+![Log-odds plot - internetService](/assets/images/logodds_internet.png)
 *Figure 23: Log-odds plot (internetService)*
 
-![Log-odds plot - onlineSecurity](./images/logodds_onlineSecurity.png)
+![Log-odds plot - onlineSecurity](/assets/images/logodds_onlineSecurity.png)
 *Figure 24: Log-odds plot (onlineSecurity)*
 
-![Log-odds plot - onlineBackup](./images/logodds_onlineBackup.png)
+![Log-odds plot - onlineBackup](/assets/images/logodds_onlineBackup.png)
 *Figure 25: Log-odds plot (onlineBackup)*
 
-![Log-odds plot - deviceProtection](./images/logodds_deviceProtection.png)
+![Log-odds plot - deviceProtection](/assets/images/logodds_deviceProtection.png)
 *Figure 26: Log-odds plot (deviceProtection)*
 
-![Log-odds plot - techSupport](./images/logodds_techSupport.png)
+![Log-odds plot - techSupport](/assets/images/logodds_techSupport.png)
 *Figure 27: Log-odds plot (techSupport)*
 
-![Log-odds plot - paymentMethod](./images/logodds_paymentMethod.png)
+![Log-odds plot - paymentMethod](/assets/images/logodds_paymentMethod.png)
 *Figure 28: Log-odds plot (paymentMethod)*
 
 #### 6.2.4 Reliability Warnings
@@ -661,7 +661,7 @@ aft.plot()
 
 ---
 
-## 7. Customer Lifetime Value (CLV) {:#customer-lifetime-value-clv}
+<h2 id="customer-lifetime-value-clv">7. Customer Lifetime Value (CLV)</h2>
 
 ### 7.1 Calculation Workflow
 
@@ -708,10 +708,10 @@ def calculate_customer_lifetime_value(cph, monthly_profit=30, discount_rate=0.10
 | 36 months | $515.01 |
 | Lifetime CLV | $626.69 |
 
-![CLV payback period analysis](./images/clv_payback_period.png)
+![CLV payback period analysis](/assets/images/clv_payback_period.png)
 *Figure 29: Payback period analysis*
 
-![CLV survival probability curve](./images/clv_survival_curve.png)
+![CLV survival probability curve](/assets/images/clv_survival_curve.png)
 *Figure 30: Survival probability curve*
 
 #### 7.2.3 CLV Trend Table (complete data for first 25 months)
@@ -753,7 +753,7 @@ def calculate_customer_lifetime_value(cph, monthly_profit=30, discount_rate=0.10
 
 ---
 
-## 8. Conclusion {:#conclusion}
+<h2 id="conclusion">8. Conclusion</h2>
 
 ### 8.1 Model Applicability and Reliability Assessment
 
@@ -809,7 +809,7 @@ The 72-month cumulative NPV for the baseline customer (not subscribed to any val
 
 ---
 
-## 9. Business Recommendations {:#business-recommendations}
+<h2 id="business-recommendations">9. Business Recommendations</h2>
 
 ### 9.1 Short-term Operational Strategies (0–6 months)
 
@@ -887,7 +887,7 @@ The CLV trend analysis shows that the first 24 months contribute 64.7% of total 
 
 ---
 
-## 10. Model Limitations and Improvement Directions {:#model-limitations-and-improvement-directions}
+<h2 id="model-limitations">10. Model Limitations and Improvement Directions</h2>
 
 ### 10.1 Reasons for AFT Model Prediction Failure
 
@@ -938,7 +938,7 @@ We recommend trying the **stratified Cox model** first in model iterations. This
 
 ---
 
-## Appendix {:#appendix}
+<h2 id="appendix">11. Appendix</h2>
 
 ### Appendix A: Technical Parameters
 - **Analysis tools**: PySpark + Lifelines

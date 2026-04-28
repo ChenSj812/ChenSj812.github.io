@@ -28,7 +28,7 @@ date: 2026-04-27
 
 ---
 
-## 1. Introduction {:#introduction}
+<h2 id="introduction">1. Introduction</h2>
 
 ### 1.1 What is Survival Analysis?
 

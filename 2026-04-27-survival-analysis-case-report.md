@@ -24,11 +24,11 @@ date: 2026-04-27
 8. [Conclusion](#conclusion)
 9. [Business Recommendations](#business-recommendations)
 10. [Model Limitations](#model-limitations)
-11. [Appendix](#Appendix)
+11. [Appendix](#appendix)
 
 ---
 
-## 1. Introduction {:#Introduction}
+## 1. Introduction {:#introduction}
 
 ### 1.1 What is Survival Analysis?
 
@@ -47,7 +47,7 @@ This case uses survival analysis to predict churn time for telecom customers, he
 
 ---
 
-## 2. Data Overview {:#Data Overview}
+## 2. Data Overview {:#data-overview}
 
 ### 2.1 Data Source
 - **Dataset**: IBM Telco Customer Churn Dataset
@@ -64,7 +64,7 @@ This case uses survival analysis to predict churn time for telecom customers, he
 
 ---
 
-## 3. Survival Analysis Methods {:#Survival Analysis Methods}
+## 3. Survival Analysis Methods {:#survival-analysis-methods}
 
 ### 3.1 Kaplan-Meier Estimator
 
@@ -145,7 +145,7 @@ Chi-square test to test whether multiple survival curves are statistically equiv
 
 ---
 
-## 4. Kaplan-Meier Survival Analysis {:#Kaplan-Meier Survival Analysis}
+## 4. Kaplan-Meier Survival Analysis {:#kaplan-meier-survival-analysis}
 
 ### 4.1 Analysis Workflow
 
@@ -456,7 +456,7 @@ for col in categorical_cols:
 
 ---
 
-## 5. Cox Proportional Hazards Model {:#Cox Proportional Hazards Model}
+## 5. Cox Proportional Hazards Model {:#cox-proportiona-hazards-model}
 
 ### 5.1 Analysis Workflow
 
@@ -560,7 +560,7 @@ The following variables violate the proportional hazards assumption:
 
 ---
 
-## 6. Accelerated Failure Time Model (AFT) {:#Accelerated Failure Time Model (AFT)}
+## 6. Accelerated Failure Time Model (AFT) {:#accelerated-failure-time-model-aft}
 
 ### 6.1 Analysis Workflow
 
@@ -661,7 +661,7 @@ aft.plot()
 
 ---
 
-## 7. Customer Lifetime Value (CLV) {:#Customer Lifetime Value (CLV)}
+## 7. Customer Lifetime Value (CLV) {:#customer-lifetime-value-clv}
 
 ### 7.1 Calculation Workflow
 
@@ -753,7 +753,7 @@ def calculate_customer_lifetime_value(cph, monthly_profit=30, discount_rate=0.10
 
 ---
 
-## 8. Conclusion {:#Conclusion}
+## 8. Conclusion {:#conclusion}
 
 ### 8.1 Model Applicability and Reliability Assessment
 
@@ -809,7 +809,7 @@ The 72-month cumulative NPV for the baseline customer (not subscribed to any val
 
 ---
 
-## 9. Business Recommendations {:#Business Recommendations}
+## 9. Business Recommendations {:#business-recommendations}
 
 ### 9.1 Short-term Operational Strategies (0–6 months)
 
@@ -887,7 +887,7 @@ The CLV trend analysis shows that the first 24 months contribute 64.7% of total 
 
 ---
 
-## 10. Model Limitations and Improvement Directions {:#Model Limitations and Improvement Directions}
+## 10. Model Limitations and Improvement Directions {:#model-limitations-and-improvement-directions}
 
 ### 10.1 Reasons for AFT Model Prediction Failure
 
@@ -938,7 +938,7 @@ We recommend trying the **stratified Cox model** first in model iterations. This
 
 ---
 
-## Appendix {:#Appendix}
+## Appendix {:#appendix}
 
 ### Appendix A: Technical Parameters
 - **Analysis tools**: PySpark + Lifelines

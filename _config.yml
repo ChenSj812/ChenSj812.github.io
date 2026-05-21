@@ -2,3 +2,8 @@ theme: minima
 title: Chen Sijia's personal blog
 description: This is where I share fun stuff about my life
 author: Chen Sijia
+
+header_pages:
+  - index.html
+  - projects.md
+  - aib-project.md
